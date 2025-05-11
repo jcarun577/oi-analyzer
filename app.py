@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import requests
 import pandas as pd
 
-app = Flask(__name__)
+app = Flask(_)
 
 # Replace this with your actual Dhan API key
 DHAN_API_KEY = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzQ5NTQ1MTg2LCJ0b2tlbkNvbnN1bWVyVHlwZSI6IlNFTEYiLCJ3ZWJob29rVXJsIjoiIiwiZGhhbkNsaWVudElkIjoiMTEwMjQ3OTcwNyJ9.xT1SoPLGfWdNlzPLWtD6l0DO3ZNcTPyUDHdbICmWbUijIgMaROG7rFmrE-XOrq_oumeOQqoTEai2ZZ8gWAosJQ"
