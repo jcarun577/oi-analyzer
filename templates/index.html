@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>OI Stock Ranking</title></head>
+<body>
+    <h1>Top Derivative Stocks by OI Change</h1>
+    <ul>
+        {% for item in ranked %}
+        <li><a href="/details/{{ item.symbol }}">{{ item.symbol }}</a>: {{ item.total_oi_change }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

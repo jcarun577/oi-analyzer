@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Strikes for {{ stock }}</title></head>
+<body>
+    <h1>OI Change by Strike - {{ stock }}</h1>
+    <table border="1">
+        <tr><th>Strike</th><th>Call OI Change</th><th>Put OI Change</th><th>Total</th></tr>
+        {% for s in strikes %}
+        <tr>
+            <td>{{ s.strike }}</td>
+            <td>{{ s.ce_oi_change }}</td>
+            <td>{{ s.pe_oi_change }}</td>
+            <td>{{ s.total_oi_change }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Back to ranking</a>
+</body>
+</html>
